@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap'); 
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.center-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Empile le texte et l'image verticalement */
+    justify-content: center;
+    align-items: center;
+    height: 85vh; /* Augmente la hauteur pour descendre l'ensemble */
+}
+
+.center-text p {
+    font-size: 6.5rem;
+    color: #ffffff;
+}
+
+.circle {
+    margin-top: 155px; /* Espace augmenté entre le texte et l'image */
+    width: 400px; /* Taille du cercle augmentée */
+    height: 400px; /* Taille du cercle augmentée */
+    border-radius: 50%; /* Rend l'image ronde */
+    overflow: hidden; /* Cache les parties de l'image qui dépassent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre entièrement le cercle */
+}
+
+.background-text {
+    font-size: 5.5rem;
+    color: rgba(217, 217, 217, 0.1); /* Couleur grise avec transparence */
+    position: absolute;
+    z-index: 1; /* Place derrière le texte du premier plan */
+    left: 99vh;
+    top: 28vh;
+    transform: translateX(-50%); /* Centre horizontalement */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    color: #D9D9D9;
+    padding: 1.5rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.toggle-btn {
+    display: none;
+    background: none;
+    color: #D9D9D9;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between; /* Centre les éléments */
+    flex-grow: 1; /* Permet à la liste de remplir l'espace disponible */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    color: #595959;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.nav-links a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    color: #595959;
+}
+
+body {
+    background-color: #262626;
+}
+
+.logo {
+    margin-right: 30%; /* Ajoute un espace de 30% à droite du logo */
+    flex-shrink: 0; /* Empêche la réduction de taille du logo */
+}
+
+.logo-img, .logo-img-1 {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover, .logo-img-1:hover {
+    transform: scale(1.1);
+}
+
+.foreground-text {
+    font-size: 2rem;
+    z-index: 2;
+    position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
