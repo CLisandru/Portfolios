@@ -40,7 +40,7 @@ body, html {
     color: rgba(217, 217, 217, 0.1); /* Couleur grise avec transparence */
     position: absolute;
     z-index: 1; /* Place derrière le texte du premier plan */
-    left: 105vh;
+    left: 100vh;
     top: 28vh;
     transform: translateX(-50%); /* Centre horizontalement */
 }
